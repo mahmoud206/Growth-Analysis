@@ -1,32 +1,64 @@
 # Growth Analysis for 365 Data Science
-----
-## Over view 
+
+## Overview  
+This project analyzes growth data for 365 Data Science and is divided into five main phases:  
+
+1. **Planning Phase**:  
+   - Identify required graphs, company terminologies, and main KPIs.  
+
+2. **Data Extraction and Preparation**:  
+   - Use SQL and Python to extract and prepare data for visualization.  
+
+3. **Tableau Dashboard Creation**:  
+   - Build dashboards featuring parameters, waterfall charts, and customizable filters.  
+
+4. **Dashboard Organization**:  
+   - Create a five-page dashboard with a homepage summarizing key KPIs and features.  
+
+5. **Insights and Recommendations**:  
+   - Provide actionable recommendations based on the analysis.  
+
 ---
-This project focuses on representation of growth data analysis  for the 365 Data Science company , Mainly, it is divided into five phases :
-1- planning phase : this phase determines the necessary graphs , company terminologies ,and main KPIs.
 
+## Components  
 
-2- Data extraction and preparation  : this phase highlight the combining two technologies alongside each other ,  crafting my SQL queries , and writing  Python scripts to prepare the data for the next step 
+### 1. Data Files  
+- **CSV Files**: Packaged in `Growth_data_files.zip`.  
 
-3- Tableau journey : this phase concentrates on building dashboards based on the extracted data and creating parameters ,waterfall charts and customizable filters 
+### 2. SQL Scripts  
+- **Folder**: `SQL.zip`.  
+- **Description**: Contains SQL queries used for data preparation, leveraging techniques like `SELECT`, CTEs, `JOIN`, and date functions.  
+- **Queries**:  
+  - `Free_and_conversions.sql`: Calculate free-to-paid conversion rates.  
+  - `Funnel.sql`: Analyze the visitor-to-paid funnel.  
+  - `Paid_by_country.sql`: Analyze paid users by country.  
+  - `Sessions_by_country.sql`: Analyze session distribution by country.  
+  - `Visitors.sql`: Analyze new and returning visitors by month and week.  
+  - `Waterfall_Subscriptions.sql`: Segment users for the waterfall chart.
 
-4- Organizing the dashboard: this phase emphasizes the importance of story telling , it consists of five pages  in addition to the home page which presents the  project KPIs and main features 
+### 3. Python Data Processing  
+- **Problem**: Analyze subscription statuses for waterfall charts (e.g., active, churned, resurrected).  
+- **Solution**:  
+  - Python script with functions to segment users:  
+    - `set_period`: Determine period start and end dates.  
+    - `is_base`, `is_new`, `is_churned`, `is_resurrected`: Categorize users.  
+    - `generate_user_tag`: Create a DataFrame with user tags.  
 
-5- Final thoughts and insights : in this phase the main focus is on providing recommendations and insights from the project 
-
-------
-## Components 
+### 4. Integration with Tableau  
+- **Visualizations**:  
+  - Free-to-paid conversion rate.  
+  - Subscription growth (waterfall chart).  
+  - Website visitors.  
+  - Geographic session distribution.  
+  - Visitor-to-paid funnel.  
+- **Homepage**: Includes key KPIs and metrics.  
+- **Sample Dashboard**:  
+  [View on Tableau Public](https://public.tableau.com/views/GrowthDataDashboard_17329849377290/Dashboard5)
 
 ---
-1- Data sources MY SQL server 
-2- SQL Scripts (SQL.Zip) :
 
-	Description: this folder contains All SQL queries used to prepare data for visualization , Using  SQL Keywords and methods like ( Select , CTE , Joins , and  Date functions)
-	Key Steps : Based on the Company's metrics and  KPIs and according to Dashboard Sketching from the planning phase ,the  Data was prepaid .
+## Tools and Technologies  
 
-			- created queries for  ( free and conversions ) queries , which free users defined as users were registered and haven't subscribed or their first order date > 30 			  minutes according to company metrics definition  
-
-			- created queries for Funnel ( Visitors to paid  funnel )
-			
-			- created queries for paid by country 
-	Outputs:
+- **Languages**: Python, SQL.  
+- **Business Intelligence**: Tableau.  
+- **Version Control**: GitHub.  

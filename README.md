@@ -53,7 +53,7 @@ This project analyzes growth data for 365 Data Science and is divided into five 
   - Visitor-to-paid funnel.  
 - **Homepage**: Includes key KPIs and metrics.  
 - **Sample Dashboard**:  
-  [View on Tableau Public](https://public.tableau.com/views/GrowthDataDashboard_17329849377290/Dashboard5)
+  [View on Tableau Public](https://public.tableau.com/views/GrowthDataDashboard_17329849377290/DashboardHome?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 ---
 

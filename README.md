@@ -23,10 +23,10 @@ This project analyzes growth data for 365 Data Science and is divided into five 
 ## Components  
 
 ### 1. Data Files  
-- **CSV Files**: Packaged in `Growth_data_files.zip`.  
+- **CSV Files**: Packaged in `Growth_data_files`.  
 
 ### 2. SQL Scripts  
-- **Folder**: `SQL.zip`.  
+- **Folder**: `SQL`.  
 - **Description**: Contains SQL queries used for data preparation, leveraging techniques like `SELECT`, CTEs, `JOIN`, and date functions.  
 - **Queries**:  
   - `Free_and_conversions.sql`: Calculate free-to-paid conversion rates.  
